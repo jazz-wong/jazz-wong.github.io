@@ -1,0 +1,16 @@
+body {
+    background-color:antiquewhite
+}
+
+h1 {
+    background-color: rgb(118, 146, 155);
+}
+
+p {
+    color: pink;
+    font-family: 'Courier New', Courier, monospace
+}
+
+img {
+    width: 70%;
+}
