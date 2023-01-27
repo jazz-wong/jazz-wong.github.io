@@ -1,1 +1,1 @@
-# jazz-wong.github.io
+# jazzwong.github.io
