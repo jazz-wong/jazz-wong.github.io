@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>JSON Demo</title>
+
+  <script>
+    fetch('class.json')
+        .then(response => response.json())
+        .then(data => {
+            //Get the list element
+            const list = document.getElementById('list');
+            // ^^this is a data tag
+
+            //Loop through the data + each items to the list
+            data.forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+
+            //Set text content and href attributes for the link
+            a.textContent = item.Name;
+            a.href = "http://" + item.Github + ".github.io";
+            //^^hyperlink // writes the link for u w/o copy and pasting the code
+
+            //add the link to the list
+            li.appendChild(a);
+            list.appendChild(li);
+            });
+        })
+  </script>
+  <style>
+    li {
+        color: aqua;
+    }
+    p {
+        color: black;
+    }
+
+    link {
+        color: black;
+    }
+  </style> 
+</head>
+
+<body>
+    <ul id="list">
+        <a href="http://jazz-wong.github.io">link</a>
+    </ul>
+</body>
+</html>
