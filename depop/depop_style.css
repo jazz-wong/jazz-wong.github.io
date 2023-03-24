@@ -69,13 +69,18 @@ h1 {
 .logo {
     top: 20px;
     width: 100px;
-    left: 30px;
+    left: 20%;
     position: relative;
-
 }
+
+#logo {
+    right: 50%;
+    width: 100px;
+}
+
 .search {
     height: 20px;
-    width: 500px;
+    width: 35%;
     border: 2px solid #262626;
     border-radius: 5px;
     padding: 5px;
@@ -85,6 +90,7 @@ h1 {
     font-size: 14px;
     margin: 0;
     font-family: 'gt-america-standard-medium-trial';
+    opacity: 0;
 }
 #search-text {
     top: 20%;
@@ -138,6 +144,7 @@ h1 {
     width: 20px;
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
+    display: none;
   }
   .grid-item {
     padding: 20px;
@@ -179,7 +186,7 @@ h1 {
     position: relative;
 }
 p {
- font-family: gt-america-standard-medium-trial;   
+ font-family: 'gt-america-standard-medium-trial';   
 }
 
 .image-box {
@@ -220,4 +227,20 @@ p {
 #second {
     position: relative;
     top: -250px;
+}
+
+@media only screen and (min-width: 850px) {
+    .search {
+        opacity: 100;
+    }
+    .grid-container {
+        display: grid;
+    }
+
+    .logo {
+        top: 20px;
+        width: 100px;
+        left: 30px;
+        position: relative;
+    }
 }
