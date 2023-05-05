@@ -1,0 +1,110 @@
+[
+{
+    "name": "Canal Side Cafe & Bistro",
+    "address": "23 Syracuse STREET, Baldwinsville",
+    "date": "2022-11-18T05:00:00.000Z",
+    "violation": "No violations found.",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 0,
+    "zip": 13027,
+    "inspection": "Conditions satisfactory at time of inspection.",
+    "id": 1029499
+  },
+  {
+    "name": "Cafe 119",
+    "address": "119 EAST Seneca STREET, Manlius",
+    "date": "2023-03-13T04:00:00.000Z",
+    "violation": "No violations found.",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 0,
+    "zip": 13104,
+    "inspection": "Conditions satisfactory at this time. All coolers operating properly to maintain potentially hazardous foods at or below 45 oF. Soup 152 oF.",
+    "id": 294669
+  },
+  {
+    "name": "Brewer Union Cafe",
+    "address": "5771 Miller ROAD, Brewerton",
+    "date": "2023-03-06T05:00:00.000Z",
+    "violation": "Item 8E-  Accurate thermometers not available or used to evaluate refrigerated or heated storage temperatures; Item 12E-  Handwashing facilities inaccessible, improperly located, dirty, in disrepair, improper fixtures, soap, and single service towels or hand drying devices missing;",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 2,
+    "zip": 13029,
+    "inspection": "Food temperatures acceptable at this time are as follows; cold held: corned beef hash 45.7'F, ham 45.2, corned beef 40'F. hot held: white pepper gravy 152'F, brown gravy 148'F, pot roast 158'F.",
+    "id": 1054403
+  },
+  {
+    "name": "Sideline Sports Cafe",
+    "address": "7201 Jones ROAD, Baldwinsville",
+    "date": "2021-10-22T04:00:00.000Z",
+    "violation": "No violations found.",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 0,
+    "zip": 13209,
+    "inspection": "Conditions satisfactory at time of inspection. This counts as a first open and operating inspection. New owner took over in July. This facility used to have several mobile units that used this as a commissary. The new owner states that no one has been granted permission to use this facility as a commissary upon them taking over the operation.",
+    "id": 1063832
+  },
+  {
+    "name": "Across the Hall Cafe",
+    "address": "258 EAST Water STREET, Syracuse",
+    "date": "2022-11-02T04:00:00.000Z",
+    "violation": "Item 8A-  Food not protected during storage, preparation, display, transportation and service, from potential sources of contamination (e.g., food uncovered, mislabeled, stored on floor, missing or inadequate sneeze guards, food containers double stacked); Item 8E-  Accurate thermometers not available or used to evaluate refrigerated or heated storage temperatures; Item 11D-  Non food contact surfaces of equipment not clean; Item 15A-  Floors, walls, ceilings, not smooth, properly constructed, in disrepair, dirty surfaces; Item 15B-  Lighting and ventilation inadequate, fixtures not shielded, dirty ventilation hoods, ductwork, filters, exhaust fans;",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 5,
+    "zip": 13202,
+    "inspection": "",
+    "id": 1074078
+  },
+  {
+    "name": "Clarke's Cafe",
+    "address": "620 Erie Boulevard West, Syracuse",
+    "date": "2022-02-22T05:00:00.000Z",
+    "violation": "Item 15B-  Lighting and ventilation inadequate, fixtures not shielded, dirty ventilation hoods, ductwork, filters, exhaust fans;",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 1,
+    "zip": 13204,
+    "inspection": "Opening inspection. This facility is located on lobby level of an office building. This is a former food service establishment. This small cafe space has a lobby open view cook line and sanitation room adjacent. Total seating currently is less than 25. This facility intends to serve traditional breakfast fare and ethnic Jamaican lunch offerings.| A small cook line is under a hood vent. A single bay deep fryer, a six burner stove and oven and a new table top flat grill are under an ansul system. The facility has household style refrigerators and freezers. One chest freezer is present near the cook line. The rear sanitation space has a hand wash sink and 3 bay sink. Wire shelving is present in the sanitation room for air drying. Cleaning chemicals are stored below the 3 bay sink. 2 refrigerators and some dry storage shelving are also present in the sanitation room. Grease trap is clean, recently serviced and located in the building basement. Mop sink is common to the building in a hallway closet outside the cafe.| All service ware will be disposable single service. Sanitation chemicals will be chlorine based. | As some minor equipment arrangement is still ongoing, operator agrees to clean and sanitize all surfaces prior to operation. Violations noted are minor and are being addressed by the owner prior to opening.",
+    "id": 1077858
+  },
+  {
+    "name": "Brick House Cafe (The)",
+    "address": "5885 EAST Circle DRIVE, Cicero",
+    "date": "2023-01-12T05:00:00.000Z",
+    "violation": "Item 10B-  Non-food contact surfaces and equipment are improperly designed, constructed, installed, maintained (equipment not readily accessible for cleaning, surface not smooth finish); Item 11C-  Food contact surfaces not washed, rinsed and sanitized after each use and following any time of operations when contamination may have occurred;",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 2,
+    "zip": 13039,
+    "inspection": "Food temperatures acceptable at this time are as follows; cold held; albacore tuna 38.5'F, chicken salad 45'F, cooked sausage patties 41'F. deli turkey 39'F. hot held: chicken soup 180'F. Walk-in cooler found at 39'F. Dish machine wash and rinse temperature found at 160'F wash and 185'F rinse which is satisfactory.",
+    "id": 768194
+  },
+  {
+    "name": "Hometown Cafe'",
+    "address": "3 North Main Street, Norwood",
+    "date": "2022-11-08T05:00:00.000Z",
+    "violation": "Item 5E- Critical Violation [RED] Enough refrigerated storage equipment is not present, properly designed, maintained or operated so that all potentially hazardous foods are cooled properly and stored below 45°F as required.; Item 8A-  Food not protected during storage, preparation, display, transportation and service, from potential sources of contamination (e.g., food uncovered, mislabeled, stored on floor, missing or inadequate sneeze guards, food containers double stacked); Item 10B-  Non-food contact surfaces and equipment are improperly designed, constructed, installed, maintained (equipment not readily accessible for cleaning, surface not smooth finish); Item 11C-  Food contact surfaces not washed, rinsed and sanitized after each use and following any time of operations when contamination may have occurred; Item 11D-  Non food contact surfaces of equipment not clean; Item 12E-  Handwashing facilities inaccessible, improperly located, dirty, in disrepair, improper fixtures, soap, and single service towels or hand drying devices missing; Item 15A-  Floors, walls, ceilings, not smooth, properly constructed, in disrepair, dirty surfaces; Item 15B-  Lighting and ventilation inadequate, fixtures not shielded, dirty ventilation hoods, ductwork, filters, exhaust fans;",
+    "critical": 1,
+    "uncorrected": 0,
+    "noncritical": 15,
+    "zip": 13668,
+    "inspection": "",
+    "id": 324423
+  },
+  {
+    "name": "Ky Duyen Cafe",
+    "address": "488 NORTH Salina STREET, Syracuse",
+    "date": "2023-01-11T05:00:00.000Z",
+    "violation": "No violations found.",
+    "critical": 0,
+    "uncorrected": 0,
+    "noncritical": 0,
+    "zip": 13203,
+    "inspection": "Conditions appear acceptable at time of inspection. Eggs measured at 40 degrees F. in refrigerator.",
+    "id": 877680
+  } 
+]
