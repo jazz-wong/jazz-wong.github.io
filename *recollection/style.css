@@ -1,0 +1,503 @@
+/* --- BASE --- */
+* {
+  cursor: url(white-1/Normal\ Select.cur), auto;
+
+}
+body {
+  margin-left: 0px;
+  position: absolute;
+
+}
+
+.picture {
+  position: absolute;
+  width: 460px;
+  height: 350px;
+  top: 100px;
+  mix-blend-mode: multiply;
+}
+
+.about {
+  position: relative;
+  top: 100px;
+  
+}
+.spread {
+  position: relative;
+  width: 1000px;
+  height: 726px;
+  border-radius: 0 2.3em 2.3em 0; 
+  left: 100px;
+  mix-blend-mode: multiply;
+}
+
+#jayna {
+  position: absolute;
+  right: 40px;
+}
+
+.image-box {
+  margin: 3rem;
+}
+
+@font-face {
+  font-family: 'scribbleregular';
+  src: url('webfontkit-20230330-105606/scribble-webfont.woff2') format('woff2'),
+       url('webfontkit-20230330-105606/scribble-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  padding-bottom: 360px;
+
+}
+
+h3 {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  font-family: halyard-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h6 {
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: -30px;
+  margin-left: 20px;
+  margin-right: 50%;
+  padding-bottom: 3%;
+}
+
+.about {
+  position: relative;
+  top: 800px;
+}
+
+h4 {
+  font-family: 'scribble';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 30px;
+  color: #d11818;
+}
+
+h2 {
+  font-family: halyard-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+#list {
+  position: relative;
+  
+}
+
+p {
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 13.77px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+/* Book */
+
+.main {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.book {
+  position: relative;
+  width: 480px;
+  height: 700px;
+  transition: transform 0.5s;
+  bottom: 50px;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+
+}
+
+
+.front,
+.back {
+  border-style: solid;
+  background-color: white;
+  position: absolute;
+  width: 513px;
+  height: 726px;
+
+  transform-origin: left;
+  transition: transform 0.5s;
+  border-radius: 0 2.3em 2.3em 0; 
+  border-color: black;
+}
+
+.cover {
+  position: relative;
+  width: 513%;
+  height: 100%;
+  background: url(cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0em 2.3em 2.3em 0em;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 513px;
+  height: 726px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+.whole_book {
+  position: absolute;
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.main {
+  position: relative;
+  left: 50%;
+}
+
+/* Controller Buttons */
+
+button {
+  border: none;
+  transition: transform 0.5s;
+  width: 100px;
+  height: 726px;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  z-index: 100;
+  cursor: url(white-1/Link\ Select.cur), pointer;
+}
+
+a {
+  cursor: url(white-1/Link\ Select.cur), pointer;
+  color: black;
+}
+
+button:hover {
+  cursor: url(white-1/Link\ Select.cur), pointer;
+}
+
+#prev-btn {
+  cursor: url(white-1/Link\ Select.cur), pointer;
+  position: relative;
+}
+
+#next-btn {
+  right: 13px;
+  width: 110px;
+  cursor: url(white-1/Link\ Select.cur), pointer;
+  position: relative;
+}
+
+/* page 8 */
+
+.jazz_back {
+  width: 904px;
+  height: 620px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  left: 0%;
+}
+
+.jazz_selfie {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+}
+
+
+/* Paper stack order */
+#p1 {
+  z-index: 100;
+}
+
+#p2 {
+  z-index: 99;
+}
+
+#p3 {
+  z-index: 98;
+}
+
+#p4 {
+  z-index: 97;
+}
+
+#p5 {
+  z-index: 96;
+}
+
+#p6 {
+  z-index: 95;
+}
+
+#p7 {
+  z-index: 94;
+}
+
+#p8 {
+  z-index: 93;
+}
+
+#p9 {
+  z-index: 92;
+}
+
+#p10 {
+  z-index: 91;
+}
+
+/* --- HEADING --- */
+.heading {
+position: sticky;
+width: 101%;
+height: 50px;
+top: 0px;
+left: 0px;
+border-style: none none solid none; 
+border-color: black;
+z-index: 77777777;
+background-color: white;
+margin-left: -7px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 900px;
+  height: 50px;
+  position: relative;
+  top: 12.5px;
+  left: 35%;
+  
+}
+
+li {
+  font-size: 15px;
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  left: 5%;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 15px;
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: sticky;
+  z-index: 77;
+  
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  transform: rotate(5deg);
+  cursor: url(white-1/Link\ Select.cur), pointer;
+  
+}
+a:hover {
+  transform: rotate(5deg);
+  cursor: url(white-1/Link\ Select.cur), pointer;
+}
+.menu {
+  position: sticky;
+  left: 0px;
+}
+
+.logo {
+  position: relative;
+  padding: 10px;
+}
+
+.logo_header {
+  position: relative;
+  width: 400px;
+  bottom: 25%;
+  margin-right: 200px;
+}
+
+.header_hover {
+  width: 90px;
+  position: absolute;
+  bottom: 17px;
+  opacity: 0;
+  z-index: 777;
+}
+.header_hover:hover {
+  opacity: 100;
+  z-index: 7777;
+}
+
+.head_hover2 {
+  width: 80px;
+  position: absolute;
+  left:10px;
+  bottom: 15px;
+  opacity: 0;
+  transform: rotate(8deg);
+  z-index: 777;
+}
+.head_hover2:hover {
+  opacity: 100;
+  z-index: 7777;
+}
+
+.header_hover3 {
+  width: 70px;
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
+  opacity: 0;
+  z-index: 777;
+}
+
+.header_hover3:hover {
+  opacity: 100;
+  z-index: 7777;
+}
+
+.base {
+  position: relative;
+}
+
+.box {
+  padding: 20px;;
+}
+
+/* MIN ELEMENTS */
+
+.minor {
+  opacity: 100;
+  position: absolute;
+  width: 50%;
+  right: 50%;
+  max-width: 520px;
+}
+
+.cover_min {
+  right: 50%;
+  opacity: 0;
+}
+
+.dropdown_image {
+  position: absolute;
+  width: 40px;
+  top: 10px;
+  margin-left: 3%;
+}
+
+.dropdown {
+  opacity: 0;
+  z-index: 77999999999999999;
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 10px;
+  margin-left: 3%;
+}
+
+.dropdown_image {
+  opacity: 0;
+}
+
+.minor {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 620px) {
+  .main {
+    display: none;
+}
+
+.cover_min {
+  opacity: 100;
+}
+
+.book {
+  display: none;
+}
+
+.minor {
+    opacity: 100;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown {
+  opacity: 100;
+}
+
+.dropdown_image {
+  opacity: 100;
+}
+
+
+}

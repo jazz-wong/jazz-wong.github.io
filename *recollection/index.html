@@ -1,0 +1,453 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.typekit.net/hej4ciw.css">
+    <title>The Re*Collection</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8"/>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script>
+      fetch('data.json')
+          .then(response => response.json())
+          .then(data => {
+        
+              const list = document.getElementById('list');
+              let frontCount = 2;
+              let backCount = 1;
+              for (let i=0; i < data.length; i++) {
+              let currentPage;
+              const li = document.createElement('p');
+              const a = document.createElement('h1');
+              const b = document.createElement('h4');
+              const c = document.createElement('p');
+              const d = document.createElement('p');
+              const e = document.createElement('p');
+              const f = document.createElement('p');
+  
+              a.textContent = data[i].who;
+              b.textContent = data[i].what;
+              c.textContent = data[i].when;
+              d.textContent = data[i].where;
+              e.textContent = data[i].why;
+              f.textContent = data[i].how;
+
+
+              li.appendChild(a);
+              li.appendChild(b);
+              li.appendChild(c);
+              li.appendChild(d);
+              li.appendChild(e);
+              li.appendChild(f);
+              if (i % 2 === 0) {
+                //use backCount if i is even
+                currentPage = document.getElementById(`b${backCount}`);
+                currentPage.appendChild(li);
+                backCount++
+              } else {
+                //otherwise, use frontCount
+                currentPage = document.getElementById(`f${frontCount}`);
+                currentPage.appendChild(li)
+                frontCount++;
+              }
+
+        
+            
+              
+              
+              
+              };
+          })
+    </script>
+</head>
+<body>
+  
+
+    <div class="heading">
+      <div class="menu">
+        
+        <id="contain">
+        
+        <div class="grid-container">
+          <div class="grid-item"> <div class="logo_header"> <a href="index.html"> <img src="recollection_logo.png"> </a></div>
+          </div>
+
+          <div class="grid-item">
+            <div class="header_hover">
+              <a href="style.html"><img src="header_hover.png"></a>
+            </div>STYLE</div>
+
+          <div class="grid-item">
+            <div class="head_hover2">
+              <a href="color.html"><img src="header_hover2.png"></a>
+            </div>COLOR</div>
+
+          <div class="grid-item">
+            <div class="header_hover3">
+            <a href="age.html"> <img src="header_hover3.png"> </a>
+          </div>AGE</div> 
+        </div>
+
+      <!--DROPDOWN MENU-->
+        <div class="mobile-menu">
+          <div class="dropdown" id="bar" onclick="ClickDropdown()">
+            <ul>
+              <li><a href="style.html">STYLE</a></li>
+              <li><a href="color.html">COLOR</a></li>
+              <li><a href="age.html">AGE</a></li>
+            </ul>
+          </div>
+          <div class="dropdown_image">
+            <img src="recollection_menu.png">
+          </div>
+        </div>
+
+        </id>
+      </div>
+    </div>
+
+
+    <div class="minor">
+      <div class="cover_min">
+        <img src ="cover_min.jpg">
+      </div>
+      <h4>The Re*Collection Magazine is best experienced through desktop. </h4>
+    </div>
+
+
+<div class="whole_book">
+
+
+    <div class="main">
+      <!-- Previous Button -->
+      <button id="prev-btn">
+        <i></i>
+    </button>
+  
+  
+      <!-- Book -->
+      <div id="book" class="book">
+          <!-- Paper 1 -->
+          <div id="p1" class="paper">
+              <div class="front">   
+                  <div id="f1" class="front-content">
+                    <div class="cover"></div>  
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b1" class="back-content">
+                      <div></div>
+                  </div>
+              </div>
+          </div>
+
+          
+          <!-- Paper 2 -->
+          <div id="p2" class="paper">
+              <div class="front">
+                  <div id="f2" class="front-content">
+                    
+                      <div><h1>I.</h1></div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b2" class="back-content">
+                    <div class="picture">
+                      <img src="ro_full.jpg">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        
+    <!-- Paper 3 -->
+          <div id="p3" class="paper">
+              <div class="front">
+                  <div id="f3" class="front-content">
+                    <div class="spread">
+                      <img src="ro_half.jpg">
+                    </div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b3" class="back-content">
+                    <div class="picture">
+                      <img src="pearl_full.jpg">
+                    </div>
+                  </div>
+              </div>
+          </div>
+    
+    <!-- Paper 4 -->
+          <div id="p4" class="paper">
+              <div class="front">
+                  <div id="f4" class="front-content">
+                    <div class="spread">
+                      <img src="pearl.jpg">
+                    </div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b4" class="back-content">
+                    <div class="picture">
+                      <img src="thiha_full.jpg">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        
+    <!-- Paper 5 -->
+          <div id="p5" class="paper">
+              <div class="front">
+                  <div id="f5" class="front-content">
+                    <div class="spread">
+                      <img src="thiha_half.jpg">
+                    </div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b5" class="back-content">
+                    <div class="picture" id="jayna">
+                      <img src="jayna_fullbody.jpg">
+                    </div>
+                  </div>
+              </div>
+          </div>
+  
+    <!-- Paper 6 -->
+          <div id="p6" class="paper">
+              <div class="front">
+                  <div id="f6" class="front-content">
+                    <div class="jayna_full"> <img src="jayna_full.jpg"></div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b6" class="back-content">
+                      
+                  </div>
+              </div>
+          </div>
+        
+  <!-- Paper 7 -->
+          <div id="p7" class="paper">
+              <div class="front">
+                  <div id="f7" class="front-content">
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b7" class="back-content">
+                  </div>
+              </div>
+          </div>
+        
+  <!-- Paper 8 -->
+          <div id="p8" class="paper">
+              <div class="front">
+                  <div id="f8" class="front-content">
+                    <div class="jazz_selfie">
+                      <img src="jazz_selfie.jpg"> 
+                    </div>
+                    
+                    <div class="jazz_back">
+                      <img src="jazz_back.jpg">
+                    </div>
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b8" class="back-content">
+                  </div>
+              </div>
+          </div>
+        
+        
+  <!-- Paper 9 -->
+          <div id="p9" class="paper">
+              <div class="front">
+                  <div id="f9" class="front-content">
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b9" class="back-content">
+                  </div>
+              </div>
+          </div>
+        
+  <!-- Paper 10 -->
+          <div id="p10" class="paper">
+              <div class="front">
+                  <div id="f10" class="front-content">
+                  </div>
+              </div>
+              <div class="back">
+                  <div id="b10" class="back-content">
+                  </div>
+              </div>
+          </div>
+
+  <!-- Paper 11 -->
+  <div id="p11" class="paper">
+    <div class="front">
+        <div id="f11" class="front-content">
+        </div>
+    </div>
+    <div class="back">
+        <div id="b11" class="back-content">
+        </div>
+    </div>
+</div>
+
+  <!-- Paper 12 -->
+  <div id="p12" class="paper">
+    <div class="front">
+        <div id="f12" class="front-content">
+          <h1>II.</h1>
+        </div>
+    </div>
+    <div class="back">
+        <div id="b12" class="back-content">
+        </div>
+    </div>
+</div>
+
+  <!-- Paper 13 -->
+  <div id="p13" class="paper">
+    <div class="front">
+        <div id="f13" class="front-content">
+        </div>
+    </div>
+    <div class="back">
+        <div id="b13" class="back-content">
+        </div>
+    </div>
+</div>
+
+<!-- Paper 14 -->
+<div id="p14" class="paper">
+  <div class="front">
+      <div id="f14" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b14" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 15 -->
+<div id="p15" class="paper">
+  <div class="front">
+      <div id="f15" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b15" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 16 -->
+<div id="p16" class="paper">
+  <div class="front">
+      <div id="f16" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b16" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 17 -->
+<div id="p17" class="paper">
+  <div class="front">
+      <div id="f17" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b17" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 18 -->
+<div id="p18" class="paper">
+  <div class="front">
+      <div id="f18" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b18" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 19 -->
+<div id="p19" class="paper">
+  <div class="front">
+      <div id="f19" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b19" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 20 -->
+<div id="p20" class="paper">
+  <div class="front">
+      <div id="f20" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b20" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 21 -->
+<div id="p21" class="paper">
+  <div class="front">
+      <div id="f21" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b21" class="back-content">
+      </div>
+  </div>
+</div>
+
+<!-- Paper 22 -->
+<div id="p22" class="paper">
+  <div class="front">
+      <div id="f22" class="front-content">
+      </div>
+  </div>
+  <div class="back">
+      <div id="b22" class="back-content">
+      </div>
+  </div>
+</div>
+        
+</div>
+  
+      <!-- Next Button -->
+      <button id="next-btn">
+          <i></i>
+      </button>
+    </div>
+  </div>
+
+</div>
+<div class="about">
+<h3>ABOUT</h3>
+<h6>Lately, I’ve come to realize the importance of self expression—specifically in terms of fashion. Being able to wear clothes you like builds confidence in a person! It’s a lesson I have learned these past couple years after learning more about my personal style. I wanted to express the people in my own life’s important garments in their wardrobe too.
+</h6></div>
+    
+</body>
+</html>
