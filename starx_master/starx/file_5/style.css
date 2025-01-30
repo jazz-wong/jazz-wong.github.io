@@ -1,0 +1,59 @@
+* {
+  cursor: url(https://cdn.glitch.global/f3c2bf58-1ef7-4e9c-94c0-d39732fbff85/20.png?v=1671659419848),
+      pointer;
+}
+
+body {
+    background-color: white;
+    
+  }
+
+
+  
+  audio::-webkit-media-controls-panel {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    z-index: 777;
+  }
+
+.audio {
+  z-index: 222;
+  position: absolute;
+  right: 50%;
+
+}
+  
+img {
+    width: 100%;
+    height: 100%;
+  }
+  
+/* .over {
+  position: absolute;
+  width: 500px;
+  align-items: center;
+} */
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  left: 30%;
+  top: 30%;
+}
+
+#mydivheader {
+  cursor: move;
+  z-index: 10;
+  width: 500px;
+}
+
+#card {
+position: absolute;
+top: 0%;
+z-index: -7;
+width: 500px;
+left: 35%;
+top: 35%;
+}
+

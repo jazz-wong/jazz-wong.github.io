@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    cursor: url(https://cdn.glitch.global/f3c2bf58-1ef7-4e9c-94c0-d39732fbff85/20.png?v=1671659419848),
+      auto;
+    
+  }
+  
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .calendar {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .top {
+    position: absolute;
+    
+    width: 100%;
+    height: 38%;
+  }
+  
+  .left {
+    position: absolute;
+    
+    width: 43%;
+    height: 100%;
+  }
+  
+  .right {
+    position: absolute;
+    
+    width: 47%;
+    height: 90%;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .bottom {
+    position: absolute;
+    
+    width: 100%;
+    height: 46%;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .calendar .img-top {
+    display: none; }
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  
+  .calendar:hover .img-top {
+    display: inline;
+  } */
+  
+  
+  

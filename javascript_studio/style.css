@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    cursor: url(Cursor79.cur), default;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+html, body {
+    height: 99%;
+    margin: 0;
+  }
+
+a {
+    color: #2800dc;
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    position: relative;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .left {
+    /* width: 70%; */
+    height: 100%;
+    position: relative;
+    width:100%;
+    text-align: center; 
+    /* flex-direction: wrap; */
+  }
+  
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Menlo', Courier, monospace;
+    font-size: 40px;
+
+}
+
+h2:hover {
+    background-color: #2800dc;
+    color: white;
+}
+
+.right {
+    /* width: 30%; */
+    display: none;
+    position: relative;
+  }
+
+html, body, .row, .column, .right {
+    height: 100%;
+}
+
+#changing {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    /* height: 43em; */
+  }
+
+#gen {
+    position: absolute;
+    background-color: white;
+    height: 100%; 
+  }
+
+#send {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    /* height: 43em; */
+
+}
+  
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+@font-face {
+    font-family: 'Wingding';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wingding'), url('wingding.woff') format('woff');
+    }
+
+.title {
+    position: relative;
+    top: 265px;
+}
+
+.project {
+    position: absolute;
+    width: 100%;
+    /* display: none; */
+}
+
+.number {
+    font-family: "Wingding", serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#one:after{
+    content:'';
+}
+#one:hover:after{
+    content:'';
+}
+
+#two:after{
+    content:'';
+}
+#two:hover:after{
+    content:'';
+}
+
+#three:after{
+    content:'';
+}
+#three:hover:after{
+    content:'';
+}
+
+:hover#one, :hover#two, :hover#three {
+    color: #2800dc;
+}
+
+#mydiv {
+    position: absolute;
+    
+    left: 25%;
+    z-index: 9;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px #2800dc;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 90%;
+    font-family: 'Menlo', Courier, monospace;
+    font-size: 14px;
+  }
+  
+  #mydivheader {
+    position: relative;
+    cursor: move;
+    z-index: 10;
+    /* background-color: #2800dc; */
+    color: #fff;
+    width: 180px;
+  }
+
+.text {
+    font-family: 'Menlo', Courier, monospace;
+    padding: 30px;
+    font-size: 14px;
+    min-height: 100%;
+    /* background-color: #2800dc;
+    color: #fff; */
+}
+
+@media only screen and (max-width: 640px) {
+
+html, body, .row, .column, .right {
+        height: 100%;
+    }
+
+header {
+        background-color: #2800dc;
+        width: 100%;
+        height: 2em;
+        z-index: 100;
+    }
+}

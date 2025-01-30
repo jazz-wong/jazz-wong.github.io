@@ -1,0 +1,215 @@
+html {
+    cursor: url(Cursor79.cur), default;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: "kepler-std-display", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+h3 {
+    font-family: "kepler-std-display", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+}
+
+video {
+    width:100%;
+}
+
+.star {
+    color: #2800dc;
+    font-size: 25px;
+    width: min-content;
+    z-index: 77;
+    animation: pulse 2s infinite;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+
+.container video {
+    position: relative;
+    display: block; 
+    margin-left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 0;
+}
+
+.Star_Moles {
+    font-size: 70px;
+    font-family: "kepler-std-display", serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom:-30px;
+    color: #2800dc;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-shadow: -0.5px -0.5px 0 #2800dc, 0.5px 0.5px 0 #2800dc, -0.5px 0.5px 0 #2800dc, 0.5px 0.5px 0 #2800dc;
+}
+
+#myVideo{
+    width:90%;
+}
+
+
+.star:hover {
+/* color: #a0a0a0; */
+color: white;
+cursor: url(pointer.cur), pointer;
+transform: rotate(340deg);
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid black; 
+    position: absolute;
+    top: 15%;
+    left: -10px;
+}
+
+.triangle2 {
+    width: 0; 
+    height: 0; 
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 11px solid black; 
+    position: absolute;
+    bottom: 51%;
+    left: 390px;
+    z-index: 8888;
+}
+
+.bubble2 {
+    width: 350px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 777;
+}
+
+.bubble {
+    width: 350px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 777;
+}
+
+.popup {
+    position:relative;
+    left: 47px;
+    bottom: 75px;
+}
+
+.popup2 {
+    position:relative;
+    left: -420px;
+    bottom: 105px;
+}
+
+
+.tiny_text {
+    font-size: 13px;
+    /* font-family: "proxima-nova", sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    position: relative;
+    bottom: 3px;
+    left: 5px;
+    padding-bottom: 10px;
+}
+
+#star1 {
+    position: absolute;
+    top: 13%;
+    left: 51.8%;
+    display: inline-block;  
+}
+
+#star2 {
+    position: absolute;
+    top: 12%;
+    left: 48%;
+    display: inline-block;
+}
+
+ #star3 {
+    position: absolute;
+    top: 28%;
+    left: 49%;
+    display: inline-block;
+}
+
+#star4 {
+    position: absolute;
+    top: 40%;
+    left: 55.5%;
+}
+
+#star5 {
+    position: absolute;
+    top: 43.5%;
+    left: 35.5%;
+}
+
+#star6 {
+    position: absolute;
+    top: 48%;
+    left: 38.5%;
+}
+
+#star7 {
+    position: absolute;
+    top: 60.1%;
+    left: 51%;
+    display: inline-block; 
+}
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
