@@ -19,6 +19,16 @@
     <div class="icon"><img src="icon.jpg"></div>
     <div class="title"><h4>CHEESE - ASCII Photo Booth</h4></div>
     <div class="close" onclick="window.location.reload()">X</div>
+    <div id="full">
+    <script>full.mousePressed(() => {
+      if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+        let fs = fullscreen();
+        fullscreen(!fs);
+      }
+    });
+  </script>_</div> 
+</div>
+
 </div>
 <div class="header">
     <h3 id="about">About</h3>

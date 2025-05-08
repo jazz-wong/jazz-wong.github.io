@@ -66,6 +66,26 @@ img {
   text-align: center;
 } 
 
+#full {
+  border-radius: 0px;
+  background: #cfcfcf;
+  border: 2px outset;
+  border-top-color: white;
+  border-right-color: #666666;
+  border-bottom-color: #666666;
+  border-left-color: white;
+  width:min-content;
+  height:min-content;
+  padding-right:3px;
+  padding-left:2px;
+  position: absolute;
+  right: 20px;
+  top: 12%;
+  margin-right: 3px;
+  font-size: 13.5px;
+  text-align: center;
+} 
+
 .title {
     margin-left: 25px;
 }
@@ -95,6 +115,7 @@ button {
     border-bottom-color: #666666;
     border-left-color: white;
     font-family: "w95fa";
+    margin: auto;
 }
 
 button:hover {
@@ -107,6 +128,10 @@ button:active {
     border-right-color: white;
     border-bottom-color: white;
     border-left-color: #666666; 
+}
+
+#full {
+  text-decoration: none;
 }
 
 button:first-letter {

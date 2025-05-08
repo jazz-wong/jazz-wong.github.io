@@ -169,7 +169,7 @@ function updateCard() {
         let saturation = 1;
         const step = 0.1; 
         const minSaturation = 0;
-        const maxSaturation = 1.5;
+        const maxSaturation = 3;
         
         document.addEventListener('keydown', (event) => {
             keysPressed[event.key] = true;
@@ -179,8 +179,7 @@ function updateCard() {
         
             // Decrease saturation on A + ArrowLeft
             if (keysPressed['a'] && keysPressed['ArrowLeft']) {
-                saturation = Math.max(saturation - step, minSaturation);
-                console.log('Saturation after decrease:', saturation); 
+                saturation = Math.max(saturation - step, minSaturation); 
                 currentIndex = (currentIndex - 1) % jsonData.length;
                 updateCard();
                 video.style.filter = `saturate(${saturation})`;
@@ -193,7 +192,6 @@ function updateCard() {
             
             if (keysPressed['d'] && keysPressed['ArrowRight']) {
                 saturation = Math.min(saturation + step, maxSaturation);
-                console.log('Saturation after increase:', saturation); // Debugging saturation change
                 currentIndex = (currentIndex + 1 + jsonData.length) % jsonData.length;
                 updateCard();
                 video.style.filter = `saturate(${saturation})`;

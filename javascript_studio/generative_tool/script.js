@@ -1,3 +1,9 @@
+//Special thanks to the tutorials from
+// Patt Vira (https://www.youtube.com/watch?v=4IyeLc6J1Uo) and
+// The Coding Train (https://www.youtube.com/watch?v=oLiaUEKsRws)
+
+
+
 let style = document.createElement('style');
 style.innerHTML = `
 .p5-radio label {
@@ -62,17 +68,23 @@ function setup() {
   myRadio.option('1', 'Invert');
   myRadio.option('2', 'Mirror');
   myRadio.selected('1');
-  myRadio.position(600, 160);
+  myRadio.position(1025, 100);
 
 
-// //FULLSCREEN
-// full = createDiv('_');
+//FULLSCREEN
 // full.mousePressed(() => {
 //   if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
 //     let fs = fullscreen();
 //     fullscreen(!fs);
 //   }
 // });
+// full.style('text-decoration','none');
+const fuller = document.getElementById('full');
+  fuller.addEventListener('click', () => {
+    let fs = fullscreen();
+    fullscreen(!fs);
+  });
+
 
 //FILM STRIP
 strip = createDiv('');
@@ -128,53 +140,66 @@ download.position(25, 740);
  
 
 //FILTER 1
- un = createButton('filter 1');
+ un = createButton('Filter 1');
  un.mousePressed(() => currentCharset = "@%#*+=-:.");
  un.position(1030, 70);
 //FILTER 2
- deux = createButton('filter 2');
+ deux = createButton('Filter 2');
  deux.mousePressed(() => currentCharset = "▂▂▃▃▄▅▅▆▇█");
  deux.position(1080, 70);
 //FILTER 3
- trois = createButton('filter 3');
+ trois = createButton('Filter 3');
  trois.mousePressed(() => currentCharset = " 0011");
  trois.position(1130, 70);
 //FILTER 4
- quatre = createButton('filter 4');
+ quatre = createButton('Filter 4');
  quatre.mousePressed(() => currentCharset = "████▒▒▒░░░░░");
  quatre.position(1180, 70);
 
  redb1 = createButton('')
  redb1.mousePressed(()=> fill(255, 0, 0))
- redb1.position(600, 220);
+ redb1.position(1030, 150);
  redb1.size(20, 20);
+ redb1.style('font-size','20px');
+ redb1.style('background-color','red');
 
  yellowb2 = createButton('')
  yellowb2.mousePressed(()=> fill(255, 225, 0))
- yellowb2.position(600, 240);
+ yellowb2.position(1030, 170);
  yellowb2.size(20, 20);
+ yellowb2.style('background-color','yellow');
  
  greenb3 = createButton('')
  greenb3.mousePressed(()=> fill(0, 225, 0))
- greenb3.position(600, 260);
+ greenb3.position(1030, 190);
  greenb3.size(20, 20);
+ greenb3.style('background-color','#00FF00');
 
  cyanb4 = createButton('')
  cyanb4.mousePressed(()=> fill(0, 225, 225));
- cyanb4.position(600, 280);
+ cyanb4.position(1030, 210);
  cyanb4.size(20, 20);
+ cyanb4.style('background-color','cyan');
 
  blueb5 = createButton('')
  blueb5.mousePressed(()=> fill(0, 0, 225));
- blueb5.position(600, 300);
+ blueb5.position(1030, 230);
  blueb5.size(20, 20);
+ blueb5.style('background-color','blue');
 
  magentab6 = createButton('')
  magentab6.mousePressed(()=> fill(225, 0, 225));
- magentab6.position(600, 320);
+ magentab6.position(1030, 250);
  magentab6.size(20, 20);
-}
+ magentab6.style('background-color','magenta')
 
+ blackb7 = createButton('')
+ blackb7.mousePressed(()=> fill(0));
+ blackb7.position(1030, 270);
+ blackb7.size(20, 20);
+ blackb7.style('background-color','black')
+ 
+}
 
 function click() {
  snap.push(get(300,0,800, 600))
@@ -182,19 +207,18 @@ function click() {
 
 function arrow() {
   if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
-    savedImg = canvas.get(60, 0, width - 50, height); // adjust as needed
+    savedImg = canvas.get(10, 10, 159, 599); 
     savedImg.save('ASCII_PHOTOBOOTH', 'png');
   }
 }
 
 function draw() {
-  //  background('#cfcfcf');
+   background('#cfcfcf');
    vid.loadPixels();
   
    let u = myRadio.value();
    if (u=='1') {
    background('#cfcfcf');
-    //  image(vid, 0, 0, 0, 0);
     
      var w = vidw/4;
      var h = vidh/4;
@@ -215,12 +239,12 @@ function draw() {
     var h = vidh/4;
     var x = 20;
     var y = 20;
-   for (var i = 0; i < min(snap.length, 4); i++) {
+    for (var i = 0; i < min(snap.length, 4); i++) {
   
         push();
-        translate(x + w, y); // move origin to right edge of snapshot
-        scale(-1, 1);         // flip horizontally
-        image(snap[i], 10, 10, w, h); // draw flipped
+        translate(x + w, y);
+        scale(-1, 1);
+        image(snap[i], 20, 0, w, h);
         pop();
        x = x + width;
       if (x>w) {
@@ -230,9 +254,8 @@ function draw() {
       }
     
     push();
-    translate(vidw, 0); // move to the right edge of canvas
-    scale(-1, 1); // flip horizontally
-    // image(vid, 0, 0, vidw, vidh); // draw video (now flipped)
+    translate(vidw, 0);
+    scale(-1, 1);
     pop();
  }
  
@@ -246,14 +269,11 @@ function draw() {
       let bright = (r + g + b) / 3;
       let tIndex = floor(map(bright, 0, 255, 0, asciiChar.length));
       
-      let a = i * m + m / 2; 
-      let d = j * l + l / 2; 
       let t = currentCharset.charAt(tIndex);
 
       noStroke();
       textSize(11);
       textAlign(CENTER, CENTER);
-      // text(t, a, d);
       text(t, i * m + offsetX, j * l + offsetY);
     }
   }
