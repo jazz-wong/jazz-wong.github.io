@@ -34,7 +34,7 @@ $(document).ready(function() {
         }
         
 
-     let circle = ""; 
+let circle = ""; 
     for (let x = 0; x < data.length; x++) {
 
             if (data[x].ratio == "1") {
@@ -163,32 +163,58 @@ function updateCard() {
             updatePart(); 
         }
 
+
+        const video = document.getElementById('video');
         const keysPressed = {};
-
-        $(document).on('keydown', function(event) {
+        let saturation = 1;
+        const step = 0.1; 
+        const minSaturation = 0;
+        const maxSaturation = 1.5;
+        
+        document.addEventListener('keydown', (event) => {
             keysPressed[event.key] = true;
-
+        
+            // Debugging: Check if keys are being detected correctly
+            console.log('Pressed Keys:', keysPressed);
+        
+            // Decrease saturation on A + ArrowLeft
             if (keysPressed['a'] && keysPressed['ArrowLeft']) {
-                currentIndex = (currentIndex - 1 + jsonData.length) % jsonData.length;
+                saturation = Math.max(saturation - step, minSaturation);
+                console.log('Saturation after decrease:', saturation); 
+                currentIndex = (currentIndex - 1) % jsonData.length;
                 updateCard();
-                updateDot();
+                video.style.filter = `saturate(${saturation})`;
+        
+                
+                keysPressed['a'] = false;
+                keysPressed['ArrowLeft'] = false;
             }
-
+        
+            
             if (keysPressed['d'] && keysPressed['ArrowRight']) {
-                currentIndex = (currentIndex + 1) % jsonData.length;
+                saturation = Math.min(saturation + step, maxSaturation);
+                console.log('Saturation after increase:', saturation); // Debugging saturation change
+                currentIndex = (currentIndex + 1 + jsonData.length) % jsonData.length;
                 updateCard();
-                updateDot();
+                video.style.filter = `saturate(${saturation})`;
+        
+                
+                keysPressed['d'] = false;
+                keysPressed['ArrowRight'] = false;
             }
         });
-
-        $(document).on('keyup', function(event) {
-            delete keysPressed[event.key];
+        
+        document.addEventListener('keyup', (event) => {
+            keysPressed[event.key] = false;
         });
 
         updateCard();
     });
 
-    dragElement(document.getElementById("mydiv"));
+
+
+
+dragElement(document.getElementById("mydiv"));
 
     function dragElement(elmnt) {
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

@@ -30,14 +30,14 @@ p {
     bottom: 3%;
 }
 
-.video {
+#video {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index:-100;
-    
+    /* filter: saturate(0%); */
   }
 
 .sat {
@@ -47,7 +47,6 @@ p {
     min-width: 100%;
     min-height: 100%;
     z-index:-100;
-    /* filter: saturate(0%); */
   }
 
 a {
