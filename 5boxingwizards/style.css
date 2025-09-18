@@ -281,8 +281,8 @@ h2 {
         font-family: 'Banquise-Regular';
         src: url('WebFont.eot');
         src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Banquise-Regular.woff') format('woff'),
-        url('/fonts/Banquise-Regular.woff2') format('woff2'),
+        url('/5boxingwizards/fonts/Banquise-Regular.woff') format('woff'),
+        url('/5boxingwizards/fonts/Banquise-Regular.woff2') format('woff2'),
         url('WebFont.ttf') format('truetype'),
         url('WebFont.svg#webfont') format('svg');
         }
@@ -291,16 +291,16 @@ h2 {
         font-family: 'KrikikrakDingbats-Regular';
         src: url('WebFont.eot');
         src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/KrikikrakDingbats-Regular.woff') format('woff'),
-        url('/fonts/KrikikrakDingbats-Regular.woff') format('woff2'),
+        url('/5boxingwizards/fonts/KrikikrakDingbats-Regular.woff') format('woff'),
+        url('/5boxingwizards/fonts/KrikikrakDingbats-Regular.woff') format('woff2'),
         url('WebFont.ttf') format('truetype'),
         url('WebFont.svg#webfont') format('svg');
         }
       
       @font-face {
         font-family: 'vtf_misterpixeltools';
-        src: url('/fonts/vtf-misterpixel.tools-webfont.woff2') format('woff2'),
-             url('/fonts/vtf-misterpixel.tools-webfont.woff') format('woff');
+        src: url('/5boxingwizards/fonts/vtf-misterpixel.tools-webfont.woff2') format('woff2'),
+             url('/5boxingwizards/fonts/vtf-misterpixel.tools-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
       }
@@ -321,8 +321,8 @@ h2 {
 
       @font-face {
         font-family: 'bloomregular';
-        src: url('/fonts/bloom-regular-webfont.woff2') format('woff2'),
-             url('/fonts/bloom-regular-webfont.woff') format('woff');
+        src: url('/5boxingwizards/fonts/bloom-regular-webfont.woff2') format('woff2'),
+             url('/5boxingwizards/fonts/bloom-regular-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
@@ -333,8 +333,8 @@ h2 {
     
     @font-face {
         font-family: 'tf_voide_murderedregular';
-        src: url('/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff2'),
-             url('/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff');
+        src: url('/5boxingwizards/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff2'),
+             url('/5boxingwizards/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
@@ -347,8 +347,8 @@ h2 {
   
   @font-face {
       font-family: 'carton_fat_faceregular';
-      src: url('/fonts/cartonfatface-regular-webfont.woff2') format('woff2'),
-           url('/fonts/cartonfatface-regular-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/cartonfatface-regular-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/cartonfatface-regular-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -360,8 +360,8 @@ h2 {
   
   @font-face {
       font-family: 'inflateptxregular';
-      src: url('/fonts/Inflate.woff') format('woff2'),
-           url('/fonts/Inflate.woff') format('woff');
+      src: url('/5boxingwizards/fonts/Inflate.woff') format('woff2'),
+           url('/5boxingwizards/fonts/Inflate.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -373,8 +373,8 @@ h2 {
   
   @font-face {
     font-family: 'Groupie-Achromatic';
-    src: url('/fonts/Groupie-Achromatic.woff') format('woff2'),
-         url('/fonts/Groupie-Achromatic.woff') format('woff');
+    src: url('/5boxingwizards/fonts/Groupie-Achromatic.woff') format('woff2'),
+         url('/5boxingwizards/fonts/Groupie-Achromatic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -385,8 +385,8 @@ h2 {
 
 @font-face {
   font-family: 'Zainer-Initials45mm';
-  src: url('/fonts/Zainer-Initials45mm.woff2') format('woff2'),
-       url('/fonts/Zainer-Initials45mm.woff') format('woff');
+  src: url('/5boxingwizards/fonts/Zainer-Initials45mm.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/Zainer-Initials45mm.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -397,8 +397,8 @@ h2 {
   
   @font-face {
       font-family: 'ketchupaddictregular';
-      src: url('/fonts/ketchupaddict-regular_bsiim-webfont.woff2') format('woff2'),
-           url('/fonts/ketchupaddict-regular_bsiim-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/ketchupaddict-regular_bsiim-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/ketchupaddict-regular_bsiim-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -410,8 +410,8 @@ h2 {
   
   @font-face {
       font-family: 'menderbroken';
-      src: url('/fonts/mender-broken-webfont.woff2') format('woff2'),
-           url('/fonts/mender-broken-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/mender-broken-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/mender-broken-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -422,8 +422,8 @@ h2 {
   
   @font-face {
       font-family: 'new_times_punkregular';
-      src: url('/fonts/new-times-punk-webfont.woff2') format('woff2'),
-           url('/fonts/new-times-punk-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/new-times-punk-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/new-times-punk-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -434,8 +434,8 @@ h2 {
   
   @font-face {
       font-family: 'saintregular';
-      src: url('/fonts/saint_regular-webfont.woff2') format('woff2'),
-           url('/fonts/saint_regular-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/saint_regular-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/saint_regular-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -446,8 +446,8 @@ h2 {
   
   @font-face {
       font-family: 'tiltortionregular';
-      src: url('/fonts/tiltortion-webfont.woff2') format('woff2'),
-           url('/fonts/tiltortion-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/tiltortion-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/tiltortion-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -458,16 +458,16 @@ h2 {
   
   @font-face {
       font-family: 'wreckagegrotesque_one';
-      src: url('/fonts/wreckage-grotesqueone-webfont.woff2') format('woff2'),
-           url('/fonts/wreckage-grotesqueone-webfont.woff') format('woff');
+      src: url('/5boxingwizards/fonts/wreckage-grotesqueone-webfont.woff2') format('woff2'),
+           url('/5boxingwizards/fonts/wreckage-grotesqueone-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
 
 @font-face {
   font-family: 'berzulis-piziusregular';
-  src: url('/fonts/berzulis-pizius-regular-webfont.woff2') format('woff2'),
-       url('/fonts/berzulis-pizius-regular-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/berzulis-pizius-regular-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/berzulis-pizius-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -479,8 +479,8 @@ h2 {
 
 @font-face {
   font-family: 'xavyregular';
-  src: url('/fonts/xavy-regular-webfont.woff2') format('woff2'),
-       url('/fonts/xavy-regular-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/xavy-regular-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/xavy-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -491,8 +491,8 @@ h2 {
 
 @font-face {
   font-family: '4_fromagesregular';
-  src: url('/fonts/4_fromages-webfont.woff2') format('woff2'),
-       url('/fonts/4_fromages-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/4_fromages-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/4_fromages-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -503,8 +503,8 @@ h2 {
 
 @font-face {
   font-family: 'baltic_skyregular';
-  src: url('/fonts/baltic_sky-webfont.woff2') format('woff2'),
-       url('/fonts/baltic_sky-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/baltic_sky-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/baltic_sky-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -516,8 +516,8 @@ h2 {
 
 @font-face {
   font-family: 'Biondeggiare-Regular';
-  src: url('/fonts/Biondeggiare-Regular.woff2') format('woff2'),
-       url('/fonts/Biondeggiare-Regular.woff') format('woff');
+  src: url('/5boxingwizards/fonts/Biondeggiare-Regular.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/Biondeggiare-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -528,8 +528,8 @@ h2 {
 
 @font-face {
   font-family: 'monsterizeregular';
-  src: url('/fonts/monsterize-webfont.woff2') format('woff2'),
-       url('/fonts/monsterize-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/monsterize-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/monsterize-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -540,8 +540,8 @@ h2 {
 
 @font-face {
   font-family: 'typefesseclaire-obscure';
-  src: url('/fonts/typefesse_claire-obscure-webfont.woff2') format('woff2'),
-       url('/fonts/typefesse_claire-obscure-webfont.woff') format('woff');
+  src: url('/5boxingwizards/fonts/typefesse_claire-obscure-webfont.woff2') format('woff2'),
+       url('/5boxingwizards/fonts/typefesse_claire-obscure-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
