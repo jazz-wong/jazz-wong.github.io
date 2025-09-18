@@ -1,0 +1,994 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+/* body {
+    filter: invert(0.97);
+} */
+
+#recolor_button {
+  color:#121415
+}
+
+p {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.title {
+position: relative;
+bottom: 17px;
+}
+
+h2 {
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  margin-top: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  animation-name: text;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes text {
+  0%   {font-family: baltic_skyregular;}
+  10%  {font-family: tiltortionregular;}
+  20%  {font-family: saintregular;}
+  30%  {font-family: ketchupaddictregular;}
+  40%  {font-family: carton_fat_faceregular;}
+  50%  {font-family: vtf_misterpixeltools;}
+  60%  {font-family: new_times_punkregular;}
+  70%  {font-family: tf_voide_murderedregular;}
+  80%  {font-family: berzulis-piziusregular;}
+  90%  {font-family: menderbroken;}
+  100% {font-family: BunnyPoo;}
+}
+
+.questions {
+  margin-left: 10px;
+}
+
+#mydiv3 {
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  border: 1.5px solid #121415;
+  text-align: center;
+  z-index: 12345678901234567890;
+  left: 15%;
+  top: 40%;
+  
+}
+.disclaimer {
+  position: relative;
+  margin-top: 30px;
+}
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    border: 1.5px solid #121415;
+    text-align: center;
+    z-index: 12345678901234567890;
+    left: 37%;
+    top: 10%;
+    
+  }
+
+  .exit2 {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1.5px solid #121415;
+    align-items: center;
+    text-indent: 2px;
+    vertical-align: top;
+    z-index: 1234567890123456789012345678901234567890;
+  }
+
+  .exit3 {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1.5px solid #121415;
+    align-items: center;
+    text-indent: 2px;
+    vertical-align: top;
+    z-index: 1234567890123456789012345678901234567890;
+  }
+
+  .exit {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1.5px solid #121415;
+    align-items: center;
+    text-indent: 2px;
+    vertical-align: top;
+    z-index: 1234567890123456789012345678901234567890;
+  }
+
+  .exit:hover {
+  animation-name: example1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-direction: alternate;
+}
+
+@keyframes example1 {
+  25%   {background-color:#F20530; }
+  50%  {background-color:#ff25e2; }
+  75%  {background-color:#1D28F2; }
+  100%  {background-color:#22F2F2; }
+}
+
+#star {
+  border: 1.5px solid #121415;
+  width: 13px;
+  height: 13px;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-indent: 0.5px;
+  left: 10px;
+  top: 5px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+#x3 {
+  border: 1.5px solid #121415;
+  width: 13px;
+  height: 13px;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  left: 282px;
+  top: 2px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+#x2 {
+  border: 1.5px solid #121415;
+  width: 13px;
+  height: 13px;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  left: 282px;
+  top: 2px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+  #x {
+    border: 1.5px solid #121415;
+    width: 13px;
+    height: 13px;
+    color: #121415;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    left: 382px;
+    top: 2px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  #mydivheader {
+    cursor: move;
+    z-index: 10;
+    width: 400px;
+    color: #121415;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+  }
+
+  #mydivheader2 {
+    cursor: move;
+    z-index: 10;
+    width: 300px;
+    color: #121415;
+  }
+
+  #mydivheader3 {
+    cursor: move;
+    z-index: 10;
+    width: 300px;
+    color: #121415;
+  }
+
+  #mydiv2 {
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    border: 1.5px solid #121415;
+    text-align: center;
+    font-family: fragment_monoregular;
+    font-weight: 100;
+    font-size: 10px;
+    height: 259px;
+    display: none;
+  }
+
+  .wizard {
+    position: relative;
+    bottom: 10px;
+  }
+  
+  #content {
+    height: 100%;
+  }
+  
+  #left {
+    float: left;
+    width: 65%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: white;
+
+  }
+  #right {
+    float: left;
+    width: 35%;
+    background: white;
+    border-left: 1.5px solid #121415;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+
+  }
+
+  /* FONTS */
+
+    @font-face{
+        font-family: 'Banquise-Regular';
+        src: url('WebFont.eot');
+        src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Banquise-Regular.woff') format('woff'),
+        url('/fonts/Banquise-Regular.woff2') format('woff2'),
+        url('WebFont.ttf') format('truetype'),
+        url('WebFont.svg#webfont') format('svg');
+        }
+
+     @font-face{
+        font-family: 'KrikikrakDingbats-Regular';
+        src: url('WebFont.eot');
+        src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/KrikikrakDingbats-Regular.woff') format('woff'),
+        url('/fonts/KrikikrakDingbats-Regular.woff') format('woff2'),
+        url('WebFont.ttf') format('truetype'),
+        url('WebFont.svg#webfont') format('svg');
+        }
+      
+      @font-face {
+        font-family: 'vtf_misterpixeltools';
+        src: url('/fonts/vtf-misterpixel.tools-webfont.woff2') format('woff2'),
+             url('/fonts/vtf-misterpixel.tools-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      #Misterpixel {
+        font-family: vtf_misterpixeltools;
+      }
+
+      @font-face {
+        font-family: 'BunnyPoo';
+        src: url('//2ttf.com/webfont/UzpvePH1/webfont.ttf') 
+        format('truetype');
+      }
+
+      #BunnyPoo {
+        font-family: BunnyPoo;
+      }
+
+      @font-face {
+        font-family: 'bloomregular';
+        src: url('/fonts/bloom-regular-webfont.woff2') format('woff2'),
+             url('/fonts/bloom-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #Bloom {
+      font-family: bloomregular;
+    }
+    
+    @font-face {
+        font-family: 'tf_voide_murderedregular';
+        src: url('/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff2'),
+             url('/fonts/tf_voide_murdered_demo_-_teenage_foundry-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #Voide {
+      font-family: tf_voide_murderedregular;
+      
+    }
+
+  
+  @font-face {
+      font-family: 'carton_fat_faceregular';
+      src: url('/fonts/cartonfatface-regular-webfont.woff2') format('woff2'),
+           url('/fonts/cartonfatface-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  #CartonFat {
+    font-family: carton_fat_faceregular;
+    
+  }
+  
+  @font-face {
+      font-family: 'inflateptxregular';
+      src: url('/fonts/Inflate.woff') format('woff2'),
+           url('/fonts/Inflate.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  #Inflate {
+    font-family: inflateptxregular;
+    
+  }
+  
+  @font-face {
+    font-family: 'Groupie-Achromatic';
+    src: url('/fonts/Groupie-Achromatic.woff') format('woff2'),
+         url('/fonts/Groupie-Achromatic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#groupie {
+  font-family: Groupie-Achromatic;
+}
+
+@font-face {
+  font-family: 'Zainer-Initials45mm';
+  src: url('/fonts/Zainer-Initials45mm.woff2') format('woff2'),
+       url('/fonts/Zainer-Initials45mm.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#zainer {
+  font-family: Zainer-Initials45mm;
+}
+  
+  @font-face {
+      font-family: 'ketchupaddictregular';
+      src: url('/fonts/ketchupaddict-regular_bsiim-webfont.woff2') format('woff2'),
+           url('/fonts/ketchupaddict-regular_bsiim-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  #KetchupAddict {
+    font-family: ketchupaddictregular;
+    
+  }
+  
+  @font-face {
+      font-family: 'menderbroken';
+      src: url('/fonts/mender-broken-webfont.woff2') format('woff2'),
+           url('/fonts/mender-broken-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  #MenderBroken {
+    font-family: menderbroken;
+    
+  }
+  
+  @font-face {
+      font-family: 'new_times_punkregular';
+      src: url('/fonts/new-times-punk-webfont.woff2') format('woff2'),
+           url('/fonts/new-times-punk-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  #NewTimesPunk {
+    font-family: new_times_punkregular;
+    
+  }
+  
+  @font-face {
+      font-family: 'saintregular';
+      src: url('/fonts/saint_regular-webfont.woff2') format('woff2'),
+           url('/fonts/saint_regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+#saint {
+  font-family: saintregular;
+  
+}
+  
+  @font-face {
+      font-family: 'tiltortionregular';
+      src: url('/fonts/tiltortion-webfont.woff2') format('woff2'),
+           url('/fonts/tiltortion-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+#tiltortion {
+  font-family: tiltortionregular;
+  
+}
+  
+  @font-face {
+      font-family: 'wreckagegrotesque_one';
+      src: url('/fonts/wreckage-grotesqueone-webfont.woff2') format('woff2'),
+           url('/fonts/wreckage-grotesqueone-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+@font-face {
+  font-family: 'berzulis-piziusregular';
+  src: url('/fonts/berzulis-pizius-regular-webfont.woff2') format('woff2'),
+       url('/fonts/berzulis-pizius-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#berzulis {
+  font-family: berzulis-piziusregular;
+    
+}
+
+@font-face {
+  font-family: 'xavyregular';
+  src: url('/fonts/xavy-regular-webfont.woff2') format('woff2'),
+       url('/fonts/xavy-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#xavy {
+  font-family: xavyregular;  
+}
+
+@font-face {
+  font-family: '4_fromagesregular';
+  src: url('/fonts/4_fromages-webfont.woff2') format('woff2'),
+       url('/fonts/4_fromages-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#fromage {
+  font-family: "4_fromagesregular";
+}
+
+@font-face {
+  font-family: 'baltic_skyregular';
+  src: url('/fonts/baltic_sky-webfont.woff2') format('woff2'),
+       url('/fonts/baltic_sky-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#baltic_sky {
+  font-family: baltic_skyregular;
+  
+}
+
+@font-face {
+  font-family: 'Biondeggiare-Regular';
+  src: url('/fonts/Biondeggiare-Regular.woff2') format('woff2'),
+       url('/fonts/Biondeggiare-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#biondeggiare {
+  font-family: Biondeggiare-Regular;
+}
+
+@font-face {
+  font-family: 'monsterizeregular';
+  src: url('/fonts/monsterize-webfont.woff2') format('woff2'),
+       url('/fonts/monsterize-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#monsterize {
+  font-family: monsterizeregular;
+}
+
+@font-face {
+  font-family: 'typefesseclaire-obscure';
+  src: url('/fonts/typefesse_claire-obscure-webfont.woff2') format('woff2'),
+       url('/fonts/typefesse_claire-obscure-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#typefesse {
+  font-family: typefesseclaire-obscure;
+}
+
+h1 {
+  margin: 10px;
+  flex-direction: row;
+  z-index: -777;
+}
+
+#Banquise {
+    font-family: Banquise-Regular, Arial, sans-serif;  
+    
+}
+
+#Krikikrak {
+  font-family: KrikikrakDingbats-Regular, Arial, sans-serif;
+}
+
+#Wreckagegrotesque {
+  font-family: wreckagegrotesque_one;
+}
+
+/* idk */
+
+.container {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.container_head {
+    width: 100%;
+    height: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 1.5px solid #121415;
+    border-bottom: 1.5px solid #121415;
+    cursor: default;
+}
+
+.style_head {
+  position: relative;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  padding-right: 90px;
+  cursor: default;
+}
+
+.slider_container {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 2px;
+    padding: 10px;
+    float: right;
+    padding-right: 50px;
+    border-left: 1.5px solid #121415;
+    
+}
+
+.title2 {
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-right: 10px;
+  color: #121415;
+  cursor: default;
+  margin: 20px
+}
+
+.font_size_text {
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #121415;
+  cursor: default;
+}
+
+
+#slider {
+  width: 170px;
+  height: 10px;  
+  background: white;
+  appearance: none;  
+  border: 1.5px solid #121415;
+  transition: .2s;
+  transition: opacity .2s;
+}
+
+#slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 13px;
+  border: 1.5px solid #121415;
+  background-color: white;
+}
+
+.items {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  align-items: center;
+  font-size: var(--font-size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  cursor: url('magic_wand.cur'), text;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column */
+  
+}
+
+.grid-item {
+  font-size: var(--font-size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  border-bottom: 1.5px solid #121415;
+  
+}
+
+.center {
+  position: absolute;
+  /* bottom: 0%; */
+  top: 0%;
+  right: 0%;
+  /* height: 100%; */
+  width: 10%;
+  height: 100%;
+  /* var(--font-size) */
+  /* text-indent: 10px; */
+  background-color: white;
+  z-index: 5555;
+  /* align-items: center;
+  text-align: center; */
+  /* padding-inline: 1% 1%; */
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.g {
+position: absolute;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  align-self: center;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+      color: #121415;
+      font-family: neue-haas-grotesk-display, sans-serif;
+      font-weight: 900;
+}
+
+a:hover {
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-direction: alternate; 
+}
+
+.g:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0%   {transform: scale(0.7); }
+  100% {transform: scale(1); }
+}
+
+@keyframes example {
+  0%   { color: #121415;}
+  25%  { color: #F20530;}
+  50%  { color: #ff25e2;}
+  75%  { color: #1D28F2}
+  100% { color: #22F2F2;}
+}
+
+#left {
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  font-size: 35px;
+}
+
+
+
+.left_header {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1.5px solid #121415;
+  position: relative;
+  z-index: 7;
+}
+
+.right_header {
+  width: 100%;
+  height: 40px;
+}
+
+#result {
+  font-size: var(--font-size);
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.left_box {
+  border-bottom: 1.5px solid #121415;
+  position: relative;
+  bottom: 4px;
+  background-color: white;
+}
+
+.mad_libs {
+position: relative;
+color: #121415;
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 19px;
+margin-left: 10px;
+top: 2.5px;
+} 
+
+#info {
+    border: 1.5px solid #121415;
+    width: 13px;
+    height: 13px;
+    color: #121415;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-indent: 5px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    top: 2px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+button {
+  background-color: white;
+  border: 1.5px solid #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+button:hover {
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+  25%   {background-color:#F20530; }
+  50%  {background-color:#ff25e2; }
+  75%  {background-color:#1D28F2; }
+  100%  {background-color:#22F2F2; }
+}
+
+@font-face {
+  font-family: 'fragment_monoregular';
+  src: url('fragmentmono-regular-webfont.woff2') format('woff2'),
+       url('fragmentmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+pre {
+  font-family: fragment_monoregular;
+  font-weight: 100;
+  font-size: 10px;
+  animation-name: example5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-direction: alternate;
+  }
+  
+@keyframes example5 {
+    0% {transform: scaleX(-1);}
+    25%   {background-color:#F20530; }
+    50%  {background-color:#ff25e2; }
+    75%  {background-color:#1D28F2; }
+    100%  {background-color:#22F2F2; }
+}
+
+
+.left_header {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+@keyframes example3 {
+  25%   {background-color:#F20530; }
+  50%  {background-color:#ff25e2; }
+  75%  {background-color:#1D28F2; }
+  100%  {background-color:#22F2F2; }
+}
+
+.left_header:hover {
+  animation-name: example3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+  animation-direction: alternate; 
+}
+
+.quest {
+  position: relative;
+  top: 10px;
+  font-size: 25px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #121415;
+  margin-left: 10px;
+}
+
+input {
+  background-color: white;
+  height: fit-content;
+  border-bottom: 1.5px solid #121415;
+  border-top: 1.5px solid white;
+  border-right: 1.5px solid white;
+  border-left: 1.5px solid white;
+  font-size: 25px;
+}
+
+:placeholder-shown {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 50%;
+  color: #121415;
+}
+
+select {
+  background-color: white;
+  height: fit-content;
+  border-bottom: 1.5px solid #121415;
+  border-top: 1.5px solid white;
+  border-right: 1.5px solid white;
+  border-left: 1.5px solid white;
+  font-size: 25px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #12141551;
+}
+
+#mad_lib_directions {
+  border: 1.5px solid #121415;
+  width: 20px;
+  height: 20px;
+  color: #121415;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  text-indent: 5px;
+}
+
+#mad_lib_directions:hover {
+  animation-name: example6;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example6 {
+  25%   {background-color:#F20530; }
+  50%  {background-color:#ff25e2; }
+  75%  {background-color:#1D28F2; }
+  100%  {background-color:#22F2F2; }
+}
+
+#footer {
+  position:fixed;
+  bottom:4%;
+  width:100%;
+}
+
+
+
+
+
+
+
+
