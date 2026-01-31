@@ -1,6 +1,115 @@
 body {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 245, 246);
 }
+
+@font-face {
+  font-family: Monument Grotesk Regular; /* set name */
+  src: url(/fonts/ABCMonumentGrotesk-Regular-Trial.woff); /* url of the font */
+}
+
+img {
+    width: 400px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 4%;
+    display: grid;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
+    font-family: 'Monument Grotesk Regular';
+  }
+
+  
+.navbar a {
+    color: #0009b8;
+    mix-blend-mode: difference;
+    text-align: center;
+    padding: 30px 25px;
+    text-decoration: none;
+    font-size: 12px;
+    z-index: 11;
+  }
+
+#play:hover {
+    color: #0009b846;
+    text-align: center;
+    padding: 30px 25px;
+    transition: color 0.7s ease;
+  }
+
+#select:hover {
+    color: #0009b846;
+    text-align: center;
+    padding: 30px 25px;
+    transition: color 0.7s ease;
+}
+
+#bonus:hover {
+    color: #0009b846;
+    text-align: center;
+    padding: 30px 25px;
+    transition: color 0.7s ease;
+}
+
+#synopsis:hover {
+    color: #0009b846;
+    text-align: center;
+    padding: 30px 25px;
+    transition: color 0.5s ease;
+}
+
+.longway {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  display: grid;
+  padding-top: 10px;
+  /* padding-left: 20%;
+  padding-right: 20%; */
+} 
+
+.inertia {
+  position: relative;
+  width: 500px;
+}
+
+.black_dada {
+  position: relative;
+  width: 500px;
+}
+
+.txt_books {
+  position: relative;
+  width: 500px;
+}
+
+.ladybird {
+  position: relative;
+  width: 500px;
+}
+
+/* .mask1 {
+  -webkit-mask-image: url(mask_screen.svg);
+  mask-image: url(mask_screen.svg) 10px;
+  mask-repeat: no-repeat;  
+  mask-position: center; 
+  mask-size: 300px;
+  z-index: 1;
+  background-color: pink;
+} */
+
+/* @media screen and (max-width: 837px) {
+body {
+    background-color: pink;
+  }
+} */
