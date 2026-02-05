@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(244, 245, 246);
+    
 }
 
 @font-face {
@@ -79,6 +80,11 @@ img {
 } 
 
 .inertia {
+  position: relative;
+  width: 500px;
+}
+
+.shapeshifter {
   position: relative;
   width: 500px;
 }
