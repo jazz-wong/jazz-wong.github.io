@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Jazz Wong Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/CustomEase.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="moon.png">
     <link rel="stylesheet" href="https://use.typekit.net/syu5ypu.css">
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer> </script>
 </head>
 <style>
     img {
@@ -19,35 +25,114 @@
 
 <body>
 
-<!-- <img class="mask1" src="/section_photography/hello_ladybird/ladybird1.jpg"> -->
+    <!-- <nav class="hr-bottom">
+        <button id="section1Btn">Section 1</button>
+        <button id="section2Btn">Section 2</button>
+        <button id="section3Btn">Section 3</button>
+    </nav>
+
+
+    <div class="content">
+        <h2 class="heading-scroll heading-l" id="section1">Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas eget iaculis nunc. </p>
+      
+        <h2 class="heading-scroll heading-l" id="section2">Section 2</h2>
+        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+      
+        <h2 class="heading-scroll heading-l" id="section3">part 3</h2>
+        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
+    
+    </div> -->
+
 
 <div class="box">
     <div class="x" id="x">
         x 
     </div>
 
-    <div class="left">
+     <div class="left">
+        <div class="content">    
+        <div class="heading-scroll heading-l" id="section1">
         <video controls>
             <source src="/section_design/inertia/trailer.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
         </video>
+        </div>
 
+        <div class="heading-scroll heading-l" id="section2">
         <img src="/section_design/inertia/inertia_instapost_bookmain.jpg">
-        <img src="/section_design/inertia/inertia_poster.jpg">
+        </div>
 
+        <img src="/section_design/inertia/inertia_book.gif">
+
+        <div class="heading-scroll heading-l" id="section3">
+            <img src="/section_design/inertia/bts_inertia.gif">
+        </div>
+
+        
+        <img src="/section_design/inertia/inertia_poster.png">
+
+        <video controls>
+            <source src="/section_design/inertia/endwells.mov" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        </video>
+        <img src="/section_design/inertia/endwells_cutout.jpg">
+    </div>
     </div>
 
-    <div class="right">
-        <h1>INERTIA (2025)</h1>
-        <h3>Directed by Juan Diego Silva-Zúñiga, Inertia follows Damian (Maximilian Issacs) in an attempt to take his grandfather (Andrew Swanson) with dementia for a final ride before putting him to rest — though, he can’t seem to bring the day to an end.
-            <br><br>
-            Winner of “Best U.S Short Film” from the Brooklyn International Short Film Festival, “Official Selection” from the Downtown Film Festival, and winner of Fine Cuts Film Festival.</h3>
-<br><br><br>
-A book collection featuring Inertia’s Screenplay Book and Behind the Scenes zine. The Screenplay book documents the film’s cinematography, screenplay, storyboard, and props, as the Behind the Scenes zine captures snapshots from camcorder recording during production.
+
+ <div class="right">
+    <nav class="hr-bottom">
+        <h1>INERTIA</h1>
         
-        
-    </div>
+        <h3><sup><button id="section1Btn">(01)</button></sup>&nbsp;
+            
+            Directed by Juan Diego Silva-Zúñiga, 
+            Inertia follows Damian (Maximilian Issacs) in an attempt to 
+            take his grandfather (Andrew Swanson) with dementia for a final 
+            ride before putting him to rest — though, he can’t seem to bring 
+            the day to an end.</h3>
+            
+            
+        <h3 style="font-family: Monument Grotesk Italic;">Winner of “Best U.S Short Film” from the Brooklyn International Short
+             Film Festival, “Official Selection” from the Downtown Film Festival, 
+             and winner of Fine Cuts Film Festival.</h3>
+
+        <h1>THE KING EDITION</h1>
+        <h3>A collection of the film’s spirit documented in a nice,
+            glossy hardcover box-set. 
+        </h3>
+
     
+        <h3><sup><button id="section2Btn">(02)</button></sup>&nbsp;
+            The <span style="font-family: Monument Grotesk Italic;">Inertia Screenplay Book</span> is an 8.5 x 11 
+            hardcover book highlighting the film’s script and cinematography. 
+            It features character biographies, Silva-Zúñiga’s original storyboard sketches, 
+            and concept prop designs by Jazz Wong.</h3>
+        
+            <h3><sup><button id="section3Btn">(03)</button></sup>&nbsp;The <span style="font-family: Monument Grotesk Italic;">Inertia: Behind the Scenes</span> is a 8.5 x 5 screw 
+            binded zine that transforms the PA’s digital camcorder video into a physical 
+            documentation of the film’s production. </h3>
+        
+
+        
+        <h1>OFFICIAL POSTER</h1>
+        <h3><sup>(04)</sup>&nbsp;The is an 8.5 x 11 
+            hardcover book highlighting the film’s script and cinematography. 
+            It features character biographies, Silva-Zúñiga’s original storyboard sketches, 
+            and concept prop designs by Jazz Wong.</h3>
+    
+            
+
+        <h1>MOVIE PROPS</h1>
+        <h3><sup>(05)</sup>&nbsp;Featured at the climax of the short film, the design of <span style="font-family: Monument Grotesk Italic;">Endwell’s</span>
+            cigarette box is inspired by Marlboros as a way to contrast the logo of an 
+            Ouroboros: a snake consuming its own tail in a circular manner. This symbol represents 
+            the continuous cycle of life, one of the main themes of Inertia.
+        </h3>
+
+        
+    </div>
 </div>
 
 
@@ -55,12 +140,11 @@ A book collection featuring Inertia’s Screenplay Book and Behind the Scenes zi
 
     <div class="inertia" id="inertia">
         <img src="/section_design/inertia/inertia_instapost_bookmain.jpg">
-        <!-- <img src="/section_design/inertia/inertia_book.gif"> -->
     </div>
+    
 
     <div class="shapeshifter">
         <img src="/section_design/shapeshifter/shapeshifter_record.jpg">
-        <!-- <img src="/section_design/inertia/inertia_book.gif"> -->
     </div>
 
     <div class="black_dada">
@@ -71,10 +155,6 @@ A book collection featuring Inertia’s Screenplay Book and Behind the Scenes zi
         <img src="/section_design/TXTbooks/Mockuuups-Poster-mockup-taped-to-a-concrete-wall-with-person.jpg">
     </div>
 
-    <!-- <div class="ladybird">
-        <img src="/section_photography/hello_ladybird/ladybird1.jpg">
-    </div> -->
-
 </div>
 
 <div class="navbar">
@@ -83,36 +163,6 @@ A book collection featuring Inertia’s Screenplay Book and Behind the Scenes zi
     <a id="bonus" href="/bonus.html">Bonus Features</a>
     <a id="synopsis" href="/synopsis.html">Synopsis</a>
 </div>
-
-
-<!-- <h1>Jazz Wong Design</h1> -->
-
-
-
-
-<!-- <div class="container">
-    <div class="tv" id="inertia">
-        <img src="mask_screen.svg">
-    </div>
-    <div class="tv" id="kingsten">
-        <img src="mask_screen.svg">
-    </div>
-
-    <div class="tv" id="txt">
-        <img src="mask_screen.svg">
-    </div>
-
-    <div class="ladybird" id="photo"></div>
-    <div class="angel" id="photo"></div>
-    <div class="nasa" id="photo"></div>
-
-    
-</div> -->
-
-<!-- <li><a href="/star_moles/index.html">ABOUT ME - STAR MOLES</a></li>
-<li><a href="/5boxingwizards/index.html">5 BOXING WIZARDS - MAD LIBS 4 FONTS</a></li>
-<li><a href="/generative_tool/generative_tool.html">CHEESE - ASCII PHOTOBOOTH</a></li>
-<li><a href="/starx_master/starx/index.html">STARX - ARG</a></li> -->
 
 
 </body>

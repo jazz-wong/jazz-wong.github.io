@@ -5,18 +5,51 @@ body {
     
 }
 
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
+}
+
 @font-face {
   font-family: Monument Grotesk Regular; /* set name */
   src: url(/fonts/ABCMonumentGrotesk-Regular-Trial.woff); /* url of the font */
 }
 
-img {
+@font-face {
+  font-family: Monument Grotesk Bold; /* set name */
+  src: url(/fonts/ABCMonumentGrotesk-Bold-Trial.woff); /* url of the font */
+}
+
+@font-face {
+  font-family: Monument Grotesk Italic; /* set name */
+  src: url(/fonts/ABCMonumentGrotesk-RegularItalic-Trial.woff); /* url of the font */
+}
+
+@font-face {
+  font-family: Nudica Medium; /* set name */
+  src: url(/fonts/nudica-medium-webfont.woff); /* url of the font */
+}
+
+/* img {
     width: 400px;
+} */
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 video {
   width: 100%;
 }
+
+
 
 .navbar {
     position: fixed;
@@ -103,12 +136,33 @@ video {
   width: 500px;
 }
 
+sup {
+  font-size: 10px;
+  color:#0009b8;
+  opacity: 75%;
+  border-radius: 100px;
+  font-family: 'Nudica Medium';
+  padding: 1px;
+  margin-left: -100px;
+  position: absolute;
+}
+
+h1 {
+font-size: 12px;
+}
+
+h3 {
+  text-indent: 25px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
 .box {
   position: fixed;
-    background: #0009b8;
-    border-radius: 4px;
-    box-shadow:  0px 0px 10px 10px #0009b8;
-  width: 90%;
+  background: rgb(244, 245, 246);
+  border-radius: 4px;
+  box-shadow:  0px 0px 10px 10px rgb(244, 245, 246);
+  width: 95%;
   height: 82%;
   z-index: 777;
   margin: 0;
@@ -116,47 +170,62 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  
+  
 }
   
-.left { 
-  grid-area: 1 / 1 / 2 / 2; 
+.left {  
   overflow: auto;
   color: whitesmoke;
   font-family: 'Monument Grotesk Regular';
+  position: relative;
+  width: 60%;
+  padding: 1vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  padding-left: 1vh;
 }
 
 .left img {
-max-width: min-content;
-max-height: min-content;
+width: 100%;
+height:fit-content;
+margin: 0;
 }
 
-.right { 
-  grid-area: 1 / 2 / 2 / 3; 
+.left video {
+  margin: 0;
+}
+
+.right {  
   margin: 10px;
-  color: whitesmoke;
+  color: #3a3a3c;
   font-family: 'Monument Grotesk Regular';
-  overflow: auto;
-  position: relative;
+  overflow:scroll;
+  position: absolute;
+  width:30%;
+  right: 1vh;
+  height: 100%;
+  margin: 2%;
+
 }
 
 .x {
   position: absolute;
-  color:rgb(184, 208, 229);
   font-family: 'Monument Grotesk Regular';
+  color:#0009b8;
   width: 25px;
   top: 5px;
   right: 5px;
   z-index: 77777;
-  font-size: 30px;
+  font-size: 20px;
 }
 
+
+
 .x:hover {
-  color: rgba(184, 208, 229, 0.379);
+  color: #0009b867;
   transition: color 0.3s ease;
+  font-family: 'Monument Grotesk Italic';
 }
 
 /* width */
@@ -179,15 +248,6 @@ max-height: min-content;
   display: none; 
 }
 
-/* .mask1 {
-  -webkit-mask-image: url(mask_screen.svg);
-  mask-image: url(mask_screen.svg) 10px;
-  mask-repeat: no-repeat;  
-  mask-position: center; 
-  mask-size: 300px;
-  z-index: 1;
-  background-color: pink;
-} */
 
 /* @media screen and (max-width: 837px) {
 body {
