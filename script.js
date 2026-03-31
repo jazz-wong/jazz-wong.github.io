@@ -18,19 +18,32 @@ document.querySelectorAll("nav button").forEach((btn, index) => {
     });
   });
 
-  const dialog = document.getElementById("box");
-  const openButton = document.getElementById("inertia");
-  const closeButton = document.getElementById("x");
+  // const dialog = document.getElementById("box");
+  // const openButton = document.getElementById("inertia");
+  // const closeButton = document.getElementById("x");
   
-  // Open button opens a modal dialog
-  openButton.addEventListener("click", () => {
-    dialog.showModal();
-    dialog.style.display = 'grid';
-  });
+  // // Open button opens a modal dialog
+  // openButton.addEventListener("click", () => {
+  //   dialog.showModal();
+
+  // });
   
-  // Close button closes the dialog box
-  closeButton.addEventListener("click", () => {
-    dialog.close();
-    dialog.style.display = 'none';
+  // // Close button closes the dialog box
+  // closeButton.addEventListener("click", () => {
+  //   dialog.close();
+  // });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const box = document.getElementById("box");
+    const openButton = document.getElementById("inertia");
+    const closeButton = document.getElementById("x");
+  
+    openButton.addEventListener("click", () => {
+      box.style.display = "grid"; // or "block" if you prefer
+    });
+  
+    closeButton.addEventListener("click", () => {
+      box.style.display = "none";
+    });
   });
   
