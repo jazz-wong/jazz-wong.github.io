@@ -18,3 +18,19 @@ document.querySelectorAll("nav button").forEach((btn, index) => {
     });
   });
 
+  const dialog = document.getElementById("box");
+  const openButton = document.getElementById("inertia");
+  const closeButton = document.getElementById("x");
+  
+  // Open button opens a modal dialog
+  openButton.addEventListener("click", () => {
+    dialog.showModal();
+    dialog.style.display = 'grid';
+  });
+  
+  // Close button closes the dialog box
+  closeButton.addEventListener("click", () => {
+    dialog.close();
+    dialog.style.display = 'none';
+  });
+  
