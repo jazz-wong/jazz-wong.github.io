@@ -1,6 +1,4 @@
-* {
-  cursor:grab;
-}
+
 
 body {
     margin: 0;
@@ -117,6 +115,11 @@ video {
 .inertia {
   position: relative;
   width: 500px;
+  cursor: pointer;
+}
+
+#inertia {
+  cursor:pointer;
 }
 
 .shapeshifter {
@@ -167,6 +170,15 @@ h3 {
   /* margin-top: 10px; */
 }
 
+h4 {
+  font-family: Nudica Medium;
+}
+
+h2 {
+  text-indent: 50px;
+  padding: 5px;
+}
+
 .box {
   position: fixed;
   background: rgb(237, 238, 239);
@@ -184,6 +196,7 @@ h3 {
 #box {
   display: none;
 }
+
   
 .left {  
   overflow: auto;
@@ -257,6 +270,13 @@ margin: 0;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   display: none; 
+}
+
+.bio {
+  font-size: 20px;
+  font-family: Monument Grotesk Regular;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 

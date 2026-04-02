@@ -37,13 +37,30 @@ document.querySelectorAll("nav button").forEach((btn, index) => {
     const box = document.getElementById("box");
     const openButton = document.getElementById("inertia");
     const closeButton = document.getElementById("x");
+
+  openButton.addEventListener("click", () => {
+    gsap.set(box, { display: "grid" });
   
-    openButton.addEventListener("click", () => {
-      box.style.display = "grid"; // or "block" if you prefer
-    });
-  
-    closeButton.addEventListener("click", () => {
-      box.style.display = "none";
-    });
+    gsap.fromTo(box,{ 
+      opacity: 0, 
+      scale: 0.95 
+    },
+      { opacity: 1, 
+        scale: 1, 
+        duration: 0.3, 
+        ease: "power2.out" }
+    );
   });
   
+  closeButton.addEventListener("click", () => {
+  gsap.to(box, {
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.2,
+    ease: "power2.in",
+    onComplete: () => {
+      box.style.display = "none";
+    }
+  });
+});
+});
