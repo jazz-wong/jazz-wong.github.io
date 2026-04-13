@@ -64,3 +64,35 @@ document.querySelectorAll("nav button").forEach((btn, index) => {
   });
 });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const box = document.getElementById("box2");
+  const openButton = document.getElementById("shapeshifter");
+  const closeButton = document.getElementById("x2");
+
+openButton.addEventListener("click", () => {
+  gsap.set(box, { display: "grid" });
+
+  gsap.fromTo(box,{ 
+    opacity: 0, 
+    scale: 0.95 
+  },
+    { opacity: 1, 
+      scale: 1, 
+      duration: 0.3, 
+      ease: "power2.out" }
+  );
+});
+
+closeButton.addEventListener("click", () => {
+gsap.to(box, {
+  opacity: 0,
+  scale: 0.95,
+  duration: 0.2,
+  ease: "power2.in",
+  onComplete: () => {
+    box.style.display = "none";
+  }
+});
+});
+});

@@ -118,7 +118,7 @@ h2 {
     z-index: 1234567890123456789012345678901234567890;
   }
 
-  .exit:hover {
+  .exit {
   animation-name: example1;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
