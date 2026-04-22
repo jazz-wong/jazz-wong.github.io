@@ -96,3 +96,68 @@ gsap.to(box, {
 });
 });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const box = document.getElementById("box3");
+  const openButton = document.getElementById("spark");
+  const closeButton = document.getElementById("x3");
+
+openButton.addEventListener("click", () => {
+  gsap.set(box, { display: "grid" });
+
+  gsap.fromTo(box,{ 
+    opacity: 0, 
+    scale: 0.95 
+  },
+    { opacity: 1, 
+      scale: 1, 
+      duration: 0.3, 
+      ease: "power2.out" }
+  );
+});
+
+closeButton.addEventListener("click", () => {
+gsap.to(box, {
+  opacity: 0,
+  scale: 0.95,
+  duration: 0.2,
+  ease: "power2.in",
+  onComplete: () => {
+    box.style.display = "none";
+  }
+});
+});
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const box = document.getElementById("box4");
+  const openButton = document.getElementById("nasa");
+  const closeButton = document.getElementById("x4");
+
+openButton.addEventListener("click", () => {
+  gsap.set(box, { display: "grid" });
+
+  gsap.fromTo(box,{ 
+    opacity: 0, 
+    scale: 0.95 
+  },
+    { opacity: 1, 
+      scale: 1, 
+      duration: 0.3, 
+      ease: "power2.out" }
+  );
+});
+
+closeButton.addEventListener("click", () => {
+gsap.to(box, {
+  opacity: 0,
+  scale: 0.95,
+  duration: 0.2,
+  ease: "power2.in",
+  onComplete: () => {
+    box.style.display = "none";
+  }
+});
+});
+});

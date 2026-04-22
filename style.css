@@ -61,7 +61,6 @@ video {
   
 .navbar a {
     color: #0009b8;
-    /* mix-blend-mode: difference; */
     text-align: center;
     padding: 30px 25px;
     text-decoration: none;
@@ -70,11 +69,11 @@ video {
   }
 
 #play:hover {
-    color: #0009b8;
-    mix-blend-mode: difference;
-    text-align: center;
-    padding: 30px 25px;
-    transition: color 0.7s ease;
+  color: #0009b846;
+  text-align: center;
+  padding: 30px 25px;
+  transition: color 0.7s ease;
+  transform: skew(5deg, -6deg);
   }
 
 #select:hover {
@@ -82,6 +81,7 @@ video {
     text-align: center;
     padding: 30px 25px;
     transition: color 0.7s ease;
+    transform: skew(5deg, -6deg);
 }
 
 #bonus:hover {
@@ -89,6 +89,7 @@ video {
     text-align: center;
     padding: 30px 25px;
     transition: color 0.7s ease;
+    transform: skew(5deg, -6deg);
 }
 
 #synopsis:hover {
@@ -96,6 +97,7 @@ video {
     text-align: center;
     padding: 30px 25px;
     transition: color 0.5s ease;
+    transform: skew(5deg, -6deg);
 }
 
 .longway {
@@ -127,6 +129,11 @@ video {
   width: 500px;
 }
 
+.spark {
+  position: relative;
+  width: 500px;
+}
+
 .nasa {
   position: relative;
   width: 500px;
@@ -146,6 +153,20 @@ sup {
   padding: 1px;
   margin-left: -100px;
   position: absolute;
+}
+
+p {
+  /* background-color: #0009b8; */
+  color: #0009b867;
+  border-radius: 100px;
+  /* color: aliceblue; */
+  max-width: fit-content;
+  font-size: 12px;
+  font-family: 'Nudica Medium';
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  transform: skew(5deg, -5deg);
 }
 
 a {
@@ -185,7 +206,7 @@ h2 {
   padding: 5px;
 }
 
-.box, .box2 {
+.box, .box2, .box3, .box4 {
   position: fixed;
   background: rgb(237, 238, 239);
   border-radius: 4px;
@@ -199,7 +220,7 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-#box, #box2 {
+#box, #box2, #box3, #box4 {
   display: none;
 }
 
@@ -255,7 +276,7 @@ margin: 0;
   color: #0009b867;
   transition: color 0.3s ease;
   transform: skew(5deg, 15deg);
-  /* font-family: 'Monument Grotesk Italic'; */
+  
 }
 
 /* width */
@@ -283,6 +304,24 @@ margin: 0;
   font-family: Monument Grotesk Regular;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.parent {
+  font-family: Monument Grotesk Regular;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0009b867;
+  font-family: 'Monument Grotesk Italic';
+  font-weight: bold;
+  position: relative;
+  
 }
 
 
