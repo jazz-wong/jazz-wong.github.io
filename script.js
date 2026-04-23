@@ -8,7 +8,7 @@ function soundEffects() {
     const randomNum = getRandomInt(29);
     const audio = new Audio(`sound/${randomNum}.wav`);
     audio.play()
-    audio.volume = 0.5;
+    audio.volume = 0.3;
 }
 gsap.registerPlugin(ScrollToPlugin);
 

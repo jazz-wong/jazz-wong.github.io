@@ -124,19 +124,30 @@ video {
   cursor:pointer;
 }
 
+#shapeshifter {
+  cursor:pointer;
+}
+
+#spark{
+  cursor:pointer;
+}
+
 .shapeshifter {
   position: relative;
   width: 500px;
+  cursor:pointer;
 }
 
 .spark {
   position: relative;
   width: 500px;
+  cursor:pointer;
 }
 
 .nasa {
   position: relative;
   width: 500px;
+  cursor:pointer;
 }
 
 .txt_books {
@@ -257,7 +268,6 @@ margin: 0;
   width:30%;
   right: 1vh;
   margin: 2%;
-
 }
 
 .x {
