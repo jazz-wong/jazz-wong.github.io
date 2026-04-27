@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz Wong Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/CustomEase.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="icon" type="image/x-icon" href="moon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/syu5ypu.css">
+    <!-- <script src="script.js" defer> </script> -->
+</head>
+<style>
+
+    * {
+        cursor: grab;
+    }
+    
+    *:active {
+        cursor: grabbing;
+    }
+    
+    body {
+        background-color: black;
+        cursor:grab;
+
+    }
+
+    img {
+        width: 500px;
+        transform: skew(5deg, -5deg);
+    }
+
+    #mydiv {
+        position: absolute;
+        z-index: 9;
+      }
+      
+      #mydivheader {
+        cursor: move;
+        z-index: 10;
+      }
+    
+    #mydivheader:active {
+        cursor: grabbing;
+    }
+
+    #mydiv:active {
+        cursor: grabbing;
+    }
+
+</style>
+<body>
+    <div id="mydiv">
+        <div id="mydivheader">
+            <img src="/jazz_resume.jpg" onclick="myFunction()">
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    function myFunction() {
+        document.querySelector("#mydivheader img").style.transform = "skew(0deg, 0deg)";
+      }
+
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
